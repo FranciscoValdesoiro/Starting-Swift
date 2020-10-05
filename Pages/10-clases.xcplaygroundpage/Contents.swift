@@ -5,7 +5,6 @@ class Programmer {
     let name: String
     let age: Int
     let languages: [Language]
-    var friends: [Programmer]?
     
     enum Language {
         case swift
@@ -32,6 +31,3 @@ let fran = Programmer(name: "Francisco", age: 33, languages: [.swift, .kotlin])
 let pepe = Programmer(name: "Pepe", age: 25, languages: [.java])
 
 print(fran.languages)
-
-fran.friends = [pepe]
-print(fran.friends?.first?.name)
